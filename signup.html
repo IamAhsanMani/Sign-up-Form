@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="./js/sweetalert2.all.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: #f0ede5">
+    <!-- <div class="form-inline">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="Email" id="email" class="form-control" />
+        </div>
+        <div class="form-group">
+                <label for="email">Email</label>
+                <input type="Email" id="email" class="form-control" />
+            </div>
+    </div> -->
+    <div class="alert alert-success text-success abc" id="signupSuccess"></div>
+<!-- <div class="container-fluid"> -->
+<div class="container w-50">
+    <h2 class="text-center text-primary">Create Account</h2>
+    <hr />
+    <br />
+    <br />
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">    
+                <label for="email">Email</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="Email" id="email" autofocus class="form-control" placeholder="Email" onBlur="emailValid()" onFocus="allClear('errEmail')"/><span class="text-danger alert-span" id="errEmail"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">    
+                <label for="email">UserName</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="text" id="username" class="form-control" placeholder="Username" onBlur="userNameValid()"  onFocus="allClear('errusername')"/><span class="text-danger  alert-span" id="errusername"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">    
+                <label for="email">Password</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="password" id="password" class="form-control" placeholder="Password" onBlur="passwordValid()" onFocus="allClear('errpassword')"/><span class="text-danger  alert-span" id="errpassword"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-sm-4">    
+                <label for="email">Confirm Password</label>
+            </div>
+            <div class="col-sm-8">
+                <input type="password" id="password1" class="form-control" placeholder="Confirm Password" onBlur="passwordValid1()" onFocus="allClear('errpassword1')"/><span class="text-danger  alert-span" id="errpassword1"></span>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <input type="submit" value="Create" class="btn btn-success" onClick="signUp()"/>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>

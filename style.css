@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+    margin: 0%;
+    padding: 0%;
+}
+.abc{
+    visibility: hidden;
+}
+.aabbcc{
+    visibility: visible;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+}
+hr{
+    width: 60%;
+}
+.container{
+    margin: 20% 0 20% 0;
+    /* background-color: #207c53; */
+}
+.alert-span{
+    font-size: 12px;
+}
